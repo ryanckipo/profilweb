@@ -1,0 +1,149 @@
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Profil Ryan Hadi Permana
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <style>
+   /* Custom scrollbar for portfolio images */
+    .portfolio-scroll::-webkit-scrollbar {
+      height: 8px;
+    }
+    .portfolio-scroll::-webkit-scrollbar-thumb {
+      background-color: #f25c66;
+      border-radius: 4px;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+   <nav class="max-w-5xl mx-auto flex justify-between items-center p-4 md:p-6">
+    <div class="text-2xl font-bold text-[#f25c66] select-none">
+     Ryan Hadi Permana
+    </div>
+    <ul class="hidden md:flex space-x-8 font-semibold uppercase text-sm">
+     <li>
+      <a class="hover:text-[#f25c66] transition" href="#home">
+       Beranda
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-[#f25c66] transition" href="#about">
+       Tentang Saya
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-[#f25c66] transition" href="#portfolio">
+       Portofolio
+      </a>
+     </li>
+    </ul>
+    <button aria-label="Toggle menu" class="md:hidden focus:outline-none" id="menuBtn">
+     <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <line x1="3" x2="21" y1="6" y2="6">
+      </line>
+      <line x1="3" x2="21" y1="12" y2="12">
+      </line>
+      <line x1="3" x2="21" y1="18" y2="18">
+      </line>
+     </svg>
+    </button>
+   </nav>
+   <ul class="md:hidden bg-white shadow-md hidden flex-col space-y-4 p-4 text-center font-semibold uppercase text-sm" id="mobileMenu">
+    <li>
+     <a class="block hover:text-[#f25c66] transition" href="#home">
+      Beranda
+     </a>
+    </li>
+    <li>
+     <a class="block hover:text-[#f25c66] transition" href="#about">
+      Tentang Saya
+     </a>
+    </li>
+    <li>
+     <a class="block hover:text-[#f25c66] transition" href="#portfolio">
+      Portofolio
+     </a>
+    </li>
+   </ul>
+  </header>
+  <main class="flex-grow max-w-5xl mx-auto p-6 space-y-20">
+   <!-- Beranda -->
+   <section class="text-center md:text-left" id="home">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+     Halo, Saya
+     <span class="text-[#f25c66]">
+      Ryan Hadi Permana
+     </span>
+    </h1>
+    <p class="text-lg md:text-xl text-gray-600 max-w-xl mx-auto md:mx-0 mb-6">
+     Saya Ryan Hadi Permana. Saya sedang menempuh pendidikan di Institut Bisnis dan Informatika Kosgoro 1957, jurusan Teknik Informatika. Saya tertarik dalam pengembangan web dan aplikasi mobile serta kecerdasan buatan..
+    </p>
+    <button class="bg-[#f25c66] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#d94a56] transition" id="changeTextBtn">
+     Klik untuk Pesan Selamat
+    </button>
+    <p class="mt-4 text-[#f25c66] font-semibold text-lg" id="message">
+    </p>
+   </section>
+   <!-- Tentang Saya -->
+   <section class="bg-white rounded-lg shadow-md p-6 md:p-10" id="about">
+    <h2 class="text-3xl font-bold mb-6 border-b-4 border-[#f25c66] inline-block pb-1">
+     Tentang Saya
+    </h2>
+    <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+     <img alt="Foto profil Masud Iqbal mengenakan kemeja putih dan tersenyum" class="rounded-full w-40 h-40 object-cover select-none" height="200" src="https://avatars.githubusercontent.com/u/28486050?v=4" width="200"/>
+     <div class="text-gray-700 max-w-xl">
+      <p class="mb-4">
+       Saya adalah seorang mahasiswa di Institut Bisnis dan Informatika Kosgoro 1957. Saya memiliki sedikit keahlian dalam HTML, CSS, JavaScript, serta framework modern seperti Tailwind CSS.
+      </p>
+      <p>
+       Selain itu, saya juga berpengalaman dalam membuat desain UI/UX yang responsif dan menarik, memastikan pengalaman pengguna yang optimal di berbagai perangkat.
+      </p>
+     </div>
+    </div>
+   </section>
+   <!-- Portofolio -->
+   <section class="bg-white rounded-lg shadow-md p-6 md:p-10" id="portfolio">
+    <h2 class="text-3xl font-bold mb-6 border-b-4 border-[#f25c66] inline-block pb-1">
+     Portofolio
+    </h2>
+    <div class="portfolio-scroll flex space-x-6 overflow-x-auto pb-4">
+     <a href="https://harlylaw.com" target="_blank" rel="noopener noreferrer" class="min-w-[250px] bg-gray-100 rounded-lg shadow hover:shadow-lg transition cursor-pointer block">
+      <img alt="Website portofolio pribadi dengan animasi dan navigasi smooth" class="rounded-t-lg w-full object-cover h-40" height="150" src="https://storage.googleapis.com/a1aa/image/1cdcd43c-b505-4ecc-104a-a97ebe033460.jpg" width="250"/>
+      <div class="p-4">
+       <h3 class="font-semibold text-lg mb-1">
+        Website Company Law
+       </h3>
+       <p class="text-gray-600 text-sm">
+        Situs company law dengan ui simpel dan navigasi smooth.
+       </p>
+      </div>
+     </a>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-white text-center text-gray-600 py-6 mt-12 shadow-inner">
+   © 2025 Ryan Hadi Permana.
+  </footer>
+  <script>
+   // Toggle mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Interactive button to change text
+    const changeTextBtn = document.getElementById('changeTextBtn');
+    const message = document.getElementById('message');
+    changeTextBtn.addEventListener('click', () => {
+      message.textContent = 'Terima kasih sudah mengunjungi profil saya!';
+      changeTextBtn.disabled = true;
+      changeTextBtn.classList.add('opacity-50', 'cursor-not-allowed');
+    });
+  </script>
+ </body>
+</html>
